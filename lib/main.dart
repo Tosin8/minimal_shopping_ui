@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widget/custom_icon.dart';
+
 void main() {
   runApp(const MaterialApp(
     home: Home_Page(),
@@ -60,7 +62,7 @@ class _Home_PageState extends State<Home_Page> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Icon(Icons.favorite),
+                      const Icon(CustomIcon.favorite),
                       Column(
                         children: const [
                           Text(
