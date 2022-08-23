@@ -53,7 +53,7 @@ class ProductCard extends StatelessWidget {
               children: [
                 const Icon(CustomIcon.favorite),
                 Column(
-                  children:  [
+                  children: [
                     const Text(
                       'Price',
                       style: TextStyle(
