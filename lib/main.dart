@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widget/custom_icon.dart';
+import 'widget/product_card.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -33,59 +33,29 @@ class _Home_PageState extends State<Home_Page> {
                 child: Image.asset('assets/images/nike_logo.png',
                     width: 20, height: 30)),
           ),
-          Container(
-            width: double.infinity,
-            height: 300,
-            decoration: BoxDecoration(
-              color: const Color(0xFFEF6C00),
-              border: Border.all(color: Colors.grey.withOpacity(.3), width: .2),
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            child: Column(
-              children: [
-                const SizedBox(height: 15),
-                Image.asset(
-                  'assets/images/nike_airforce_w.png',
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  'Nike Airforce W',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    letterSpacing: 1.5,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 80),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Icon(CustomIcon.favorite),
-                      Column(
-                        children: const [
-                          Text(
-                            'Price',
-                            style: TextStyle(
-                              // color: Colors.white,
-                              fontSize: 20,
-                            ),
-                          ),
-                          Text('\$120.00',
-                              style: TextStyle(
-                                //color: Colors.white,
-                                fontSize: 25,
-                                letterSpacing: 5.0,
-                              ))
-                        ],
-                      ),
-                      const Icon(Icons.shopping_cart),
-                    ],
-                  ),
-                )
-              ],
-            ),
+          const ProductCard(
+            imgUrl: 'assets/images/nike_airforce_w.png',
+            title: 'Nike Airforce W',
+            color_product: Color(0xFFEF6C00),
+            product_price: '\$120.00',
+          ),
+          const ProductCard(
+            imgUrl: 'assets/images/nike_x_sbdung_green_lobster.png',
+            title: 'Nike X Sbding Green',
+            color_product: Color(0xFF0277BD),
+            product_price: '\$80.00',
+          ),
+          const ProductCard(
+            imgUrl: 'assets/images/nike_zoom_pegasus_33-light_blue.png',
+            title: 'Nike Pegasus Blue',
+            color_product: Color(0xFF512DA8),
+            product_price: '\$50.00',
+          ),
+          const ProductCard(
+            imgUrl: 'assets/images/nike_zoom_pegasus_33_light_pink.png',
+            title: 'Nike Pegaus Pink',
+            color_product: Color(0xFFF9A825),
+            product_price: '\$56.00',
           ),
         ],
       ),
