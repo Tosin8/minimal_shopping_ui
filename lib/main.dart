@@ -33,24 +33,28 @@ class _Home_PageState extends State<Home_Page> {
                 child: Image.asset('assets/images/nike_logo.png',
                     width: 20, height: 30)),
           ),
+          const SizedBox(height: 15),
           const ProductCard(
             imgUrl: 'assets/images/nike_airforce_w.png',
             title: 'Nike Airforce W',
             color_product: Color(0xFFEF6C00),
             product_price: '\$120.00',
           ),
+          const SizedBox(height: 15),
           const ProductCard(
             imgUrl: 'assets/images/nike_x_sbdung_green_lobster.png',
             title: 'Nike X Sbding Green',
             color_product: Color(0xFF0277BD),
             product_price: '\$80.00',
           ),
+          const SizedBox(height: 15),
           const ProductCard(
             imgUrl: 'assets/images/nike_zoom_pegasus_33-light_blue.png',
             title: 'Nike Pegasus Blue',
             color_product: Color(0xFF512DA8),
             product_price: '\$50.00',
           ),
+          const SizedBox(height: 15),
           const ProductCard(
             imgUrl: 'assets/images/nike_zoom_pegasus_33_light_pink.png',
             title: 'Nike Pegaus Pink',
